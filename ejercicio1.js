@@ -99,7 +99,7 @@ function init(p1, p2, p3, lr1) {
     html2 = html2 + listaErrores.join('')
     err.innerHTML = html2   
 
-percent = count * 100 / r1.length;
+percent = count * 100 / lr1.lenght;
 console.log (percent)
 }
 
