@@ -48,6 +48,18 @@ function clearButton (p1, p2, p3) {
 
 //-------------------------------Funcion1------------------------------//
 
+function almacenarFaltas (){
+
+for (let i = 0; i < listaAlumnos.length; i++) {
+    if (listaRespuestas1[posicion]= "no"){
+    listaFaltas++
+    }else{}
+
+}
+}
+almacenarFaltas()
+console.log(almacenarFaltas)
+
 function init(p1, p2, p3, lr1) {
 
     var prese = document.getElementById(p1)
@@ -77,9 +89,8 @@ function init(p1, p2, p3, lr1) {
             falt.style.padding = `8px`;
             falt.style.backgroundColor = `rgb(255, 0, 0, 0.5)`
             faltasAlumno = `El alumno llamado ${listaAlumnos[posicion]} ha faltado: `+ count +` veces` + `<br>`
-            count++
             lista.push(faltasAlumno)
-
+            
         } else {
             var indefinido = `La respuesta para el alumno ${listaAlumnos[posicion]} no es valida` + `<br>`
             listaErrores.push(indefinido)
